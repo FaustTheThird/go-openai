@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sashabaranov/go-openai"
-	"github.com/sashabaranov/go-openai/internal/test/checks"
+	"github.com/FaustTheThird/go-openai"
+	"github.com/FaustTheThird/go-openai/internal/test/checks"
 )
 
 func TestImages(t *testing.T) {
