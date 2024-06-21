@@ -86,10 +86,16 @@ const (
 	ThreadMessageRoleUser ThreadMessageRole = "user"
 )
 
+type MessageAttachment struct {
+	FileID string `json:"file_id"`
+	Tools  []Tool `json:"tools"`
+ }
+
 type ThreadMessage struct {
 	Role     ThreadMessageRole `json:"role"`
 	Content  string            `json:"content"`
-	FileIDs  []string          `json:"file_ids,omitempty"`
+	//FileIDs  []string          `json:"file_ids,omitempty"`
+	Attachments  []MessageAttachment `json:"attachments,omitempty"`
 	Metadata map[string]any    `json:"metadata,omitempty"`
 }
 
